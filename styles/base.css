@@ -115,7 +115,16 @@ img{
 .card a:hover {
     text-decoration: underline;
 }
-
+.about h2{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.country-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
 
 footer {
     background-color: #4b2e83;
