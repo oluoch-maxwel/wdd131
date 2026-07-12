@@ -25,16 +25,17 @@ header nav {
     padding: 0 1rem;
 }
 
-header nav span{
+header nav span {
     font-size: 1.5rem;
     font-weight: 800;
     padding: 10px;
 }
+
 .hum-button {
     display: none;
     width: 40px;
     height: 40px;
-    justify-self: end;  /* Moves it to the right */
+    justify-self: end; /* Moves it to the right */
     background: transparent;
     border: none;
     color: white;
@@ -42,7 +43,7 @@ header nav span{
     cursor: pointer;
 }
 
-.hum-button.show{
+.hum-button.show {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,12 +71,13 @@ nav ul li a {
     font-size: 1.5rem;
 }
 
-main h1{
+main h1 {
     text-align: center;
     font-weight: 700;
     font-size: 32px;
     margin: 10px;
 }
+
 .fig-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
