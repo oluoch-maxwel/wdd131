@@ -1,0 +1,37 @@
+@media (max-width: 750px) {
+   
+ 
+    .hum-button {
+        display: block;
+        justify-content: right;
+    }
+    .hum-button::before {
+        content: "\2630";       /* ☰ */
+        font-size: 2rem;
+    }
+
+    .hum-button.show::before {
+        content: "\2715";       /* ✕ */
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+  a:hover, a:active{
+    background-color: #fff;
+    color: #000;
+   }
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    .fig-section {
+        grid-template-columns: 1fr;
+    }
+}

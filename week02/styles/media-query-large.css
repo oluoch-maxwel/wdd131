@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section {
+    padding: 30px;
+    border: 10px solid #aeccf3;
+    background-color: #fff;
+}
+
+main,
+footer {
+    margin-top: 15px;
+}
+
+
+
+footer {
+    background-color: #aeccf3;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}

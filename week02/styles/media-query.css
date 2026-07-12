@@ -1,0 +1,38 @@
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: #aeccf3;
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main section {
+        padding: 10px;
+        border: 5px solid #aeccf3;
+        background-color: #fff;
+    }
+
+    main,
+    footer {
+        margin-top: 7px;
+    }
+
+
+    footer {
+        background-color: #aeccf3;
+        padding: 15px;
+        margin-top: 7px;
+        font-size: 14px;
+    }
+}
