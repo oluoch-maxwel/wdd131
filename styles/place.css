@@ -5,9 +5,11 @@
     --shade-color: #000;
     --white-color: #fff;
     --shade-color-bg: #f5f5f5;
+
     --font-weight-h1: 900;
     --font-weight-heading: 600;
     --font-weight-text: 400;
+
     --font-size-scaling: 62.5%;
     --font-size-h1: 6.2rem;
     --font-size-h2: 3.6rem;
@@ -15,8 +17,10 @@
     --font-size-sm: 1.8rem;
     --font-size-md: 2rem;
     --font-size-lg: 3.2rem;
+
     --line-height-tight: 1.2;
     --line-height-normal: 1.5;
+
     --nav-height: 9rem;
 }
 
@@ -49,7 +53,6 @@ h2 {
     padding-left: 1.5rem;
 }
 
-
 h3 {
     font-size: var(--font-size-h3);
     line-height: var(--line-height-tight);
@@ -76,7 +79,8 @@ article span {
     font-weight: var(--font-weight-text);
 }
 
-/* ==color helper classes== */
+/* Color helper classes */
+
 .text-primary {
     color: var(--primary-color);
 }
@@ -104,12 +108,15 @@ article span {
     color: var(--white-color);
 }
 
-/* ===uncomment to get contained view of 99% */
-/* .wrapper{
-    max-width: 1200px;
-    width: 99%;
-    margin: 0 auto;
-} */
+/* Uncomment if you want contained layout */
+
+/*
+.wrapper{
+    max-width:1200px;
+    width:99%;
+    margin:0 auto;
+}
+*/
 
 header {
     background-color: var(--secondary-color);
@@ -130,7 +137,7 @@ main {
     position: relative;
 }
 
-main .hero-section {
+.hero-section {
     position: relative;
 }
 
@@ -152,11 +159,9 @@ main .hero-section {
     left: 3.5rem;
     width: 36vw;
     max-width: 90%;
-    height: auto;
-    background-color: rgb(255, 254, 254);
+    background: #fff;
     padding: 2rem;
 }
-
 
 .hero-section .weather {
     position: absolute;
@@ -164,38 +169,41 @@ main .hero-section {
     right: 3.5rem;
     width: 30vw;
     max-width: 90%;
-    height: auto;
-    background-color: rgb(255, 254, 254);
+    background: #fff;
     padding: 2rem;
 }
 
 .badge {
-    background-color: green;
+    background: green;
     color: var(--white-color);
     position: relative;
     left: -3rem;
     top: -1.5rem;
-    padding: 0.5rem;
+    padding: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 1rem 0 1rem;
 }
 
-.icon-em {
-    font-size: 4rem;
+/* SVG Weather Icon */
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
 }
 
-.icon-em::before {
-    content: "🌦️"
+/* Required ::after pseudo-element */
+
+.weather-header::after {
+    content: "";
+    display: block;
 }
 
 .data-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: var(--line-height-normal);
-    margin-bottom: 0.75rem;
     margin-bottom: .75rem;
     line-height: var(--line-height-normal);
 }
@@ -214,30 +222,21 @@ footer {
     text-align: center;
     border-top: 1rem solid red;
     margin-top: auto;
-    padding: 3rem 0;
     margin-bottom: 2rem;
+    padding: 3rem 0;
 }
 
 footer p {
     color: var(--white-color);
 }
 
-/* ==========MOBILE VIEW===========*/
+/* ================= MOBILE ================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
     .hero-section {
         display: flex;
         flex-direction: column;
-    }
-
-    .icon-em::before {
-        display: none;
-    }
-
-    .icon-em::before {
-        display: block;
-        content: "🌦️"
     }
 
     .hero-section .data,
@@ -252,31 +251,30 @@ footer p {
 
     .badge {
         position: static;
-        display: block;
-        background-color: transparent;
-        transform: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: transparent;
         margin-bottom: 1rem;
-        text-align: center;
     }
 
     h2 {
         color: var(--shade-color);
-        margin-bottom: 3rem;
+        margin: 0;
         font-size: 5rem;
+        padding-left: 0;
     }
 
-    .icon-em {
-        font-size: 7rem;
-    }
-
-    .data-info {
-        font-size: .95rem;
+    .weather-icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
-/* ===========LARGE DESKTOPS============*/
+/* ================= LARGE DESKTOP ================= */
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
 
     .hero-section .data {
         left: 5rem;
