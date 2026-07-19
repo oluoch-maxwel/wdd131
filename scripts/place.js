@@ -1,29 +1,19 @@
-
+// Footer
 const year = new Date().getFullYear();
+document.getElementById("currentyear").textContent = `© ${year}`;
 
-const currentyear = document.querySelector("#currentyear");
-
-currentyear.textContent = `© ${year}`;
-
-document.querySelector("#lastModified").textContent =
+document.getElementById("lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
-
-
-
-const kmh = document.getElementById("km-h");
-const temp = document.getElementById("temp");
-
-
 
 // Static weather values
 const temperature = 8; // °C
 const windSpeed = 12;  // km/h
 
-// Display the static values
-document.getElementById("temperature").textContent = temperature;
-document.getElementById("windspeed").textContent = windSpeed;
+// Display values
+document.getElementById("temperature").textContent = `${temperature} °C`;
+document.getElementById("windspeed").textContent = `${windSpeed} km/h`;
 
-// Function to calculate wind chill (Metric Formula)
+
 function calculateWindChill(temp, speed) {
     return (
         13.12 +
@@ -33,12 +23,10 @@ function calculateWindChill(temp, speed) {
     ).toFixed(1);
 }
 
-// Check if calculation is valid
 let windChill = "N/A";
 
 if (temperature <= 10 && windSpeed > 4.8) {
     windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
 }
 
-// Display the result
 document.getElementById("windChill").textContent = windChill;
