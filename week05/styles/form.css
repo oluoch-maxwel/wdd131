@@ -1,0 +1,134 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+footer, header span{
+    display: block;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #292021;
+    text-align: center;
+    color: white;
+    max-width: 450px;
+    margin-bottom: 1rem;
+}
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.form {
+    background-color: #fcefef;
+    padding: 0.1rem 1rem;
+    border-radius: 6px;
+}
+
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.form div {
+    padding-top: .5rem;
+    color: #000;
+    font-size: .9rem;
+}
+
+.label-rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2rem;
+    max-width: 95%;
+    width: 380px;
+    margin-left: 5%;
+}
+.date{
+    margin-bottom: .5rem;
+}
+.label-rating {
+    margin-top: -2rem;
+}
+
+
+.check-box, .check-box label{
+    margin-top: -0.7rem;
+}
+
+
+.label-rating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labe-rating .radio-group {
+    margin-top: -1rem;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form select,
+.form textarea {
+    display: block;
+    background-color: #fff;
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+/* Submit button */
+.form input[type="submit"] {
+    border: none;
+    max-width: 90%;
+    width: 400px;
+    padding: 0.75rem;
+    color: #fff;
+    background-color: #008000;
+    margin: 0.1rem 4% 0.9rem;
+    border-radius: 6px;
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+label span{
+    color: blue;
+    font-weight: 500;
+    font-size: .7rem;
+}
+
+footer{
+    margin-top: 1rem;
+}
+/* .form input:required {
+ 
+} */
+
+
+/* If latter i will insert fieldset */
+/* .form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%; */
+/* } */
+
+/* for latter legend */
+/* .form legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+} */
