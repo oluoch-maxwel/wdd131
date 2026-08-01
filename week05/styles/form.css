@@ -49,9 +49,7 @@ footer, header span{
 .date{
     margin-bottom: .5rem;
 }
-.label-rating {
-    margin-top: -2rem;
-}
+
 
 
 .check-box, .check-box label{
@@ -114,21 +112,34 @@ label span{
 footer{
     margin-top: 1rem;
 }
-/* .form input:required {
- 
-} */
 
 
-/* If latter i will insert fieldset */
-/* .form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: .5rem 2%; */
-/* } */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
 
-/* for latter legend */
-/* .form legend {
-    color: #445ba9;
-    padding: 0 .5rem;
-} */
+    .form {
+        padding: 0.1rem 0.75rem;
+    }
+
+    .label-rating {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form input[type="text"],
+    .form input[type="date"],
+    .form select,
+    .form textarea {
+        max-width: 100%;
+    }
+
+    .form input[type="submit"] {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
