@@ -1,0 +1,278 @@
+
+/* ===========Media Queries=========== */
+@media (max-width: 768px) {
+    header{
+        display: block;
+    }
+    header nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        width: 100%;
+        height: auto;
+        max-height: none;
+
+        padding: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 9rem;
+
+        /* position: fixed;
+        top: 0;
+        left: 0; */
+
+        background: var(--white);
+        border-bottom: 1px solid var(--graphite);
+        z-index: 1000;
+    }
+
+    header nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav img {
+        width: 10rem;
+        height: auto;
+    }
+
+    /* header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+
+        margin: 1rem 0 0;
+        padding: 0;
+    } */
+
+    header nav img {
+        width: 9rem;
+        height: auto;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        margin-top: 50rem;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero-img {
+        width: 100%;
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .hero-img img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+
+        /* Remove desktop shape */
+        clip-path: none;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+         position: relative;
+        z-index: 20;
+    }
+    .hero-buttons .btn {
+        position: relative;
+        z-index: 20;
+        display: inline-block;
+    }
+
+    .hero-buttons li{
+        display: inline-block;
+        margin: 0.5rem 0;
+    }
+    
+
+    .featured-services {
+        position: static;
+        margin-top: 0;
+    }
+    .featured-services article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+
+}
+
+/* ====mobile view=== */
+@media (max-width: 430px) {
+
+    header nav {
+        border-bottom: none;
+        
+    }
+
+    header nav ul {
+        display: block;
+        /* background-color: black; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 1.2rem;
+        border-bottom: 1px solid black;
+        color: #111111;
+
+        text-decoration: none;
+    }
+
+    .hero,.gallery-card, .featured-services, .contact-container {
+        margin-top: 60rem;
+    }
+
+    
+}
+
+/* ====hamburger menu=== */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/* ==== Contact Section ==== */
+
+@media (max-width: 768px) {
+
+    /* Contact section */
+    .contact-preview {
+        width: 100%;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        margin-top: 20rem;
+    }
+
+    /* Heading */
+    .section-title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title p {
+        font-size: 1rem;
+    }
+
+    /* Contact information + form */
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        width: 100%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Contact information */
+    .info-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .info-box span {
+        flex-shrink: 0;
+    }
+
+    /* Form */
+    .contact-form form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Google map */
+    .google-map {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .google-map h2 {
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        display: block;
+        border: 0;
+    }
+}

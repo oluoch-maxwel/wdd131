@@ -1,0 +1,60 @@
+
+.gallery-card {
+    padding-top: 6rem;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    grid-gap: 3rem;
+    padding: 3rem;
+    place-items: center;
+}
+
+.image-grid figure {
+    max-width: 40rem;
+    width: 100%;
+    transition:.3s;
+}
+
+
+.image-grid img {
+    display: block;
+    width: 100%;
+    max-width: 40rem;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+    object-fit: cover;
+}
+
+
+.image-grid figure:hover{
+    transform:translateY(-8px);
+}
+.image-grid figcaption {
+    background-color: white;
+    padding: .5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+footer {
+    border-top: 0.2rem solid yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* .testimonial-card{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+} */
+
